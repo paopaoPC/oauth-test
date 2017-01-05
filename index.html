@@ -10,13 +10,15 @@
 		padding: 0;
 		margin: 0;
 	}
-	button {
+	#bt1,#bt2 {
 		margin: auto;
 		margin-top: 50px;
 		background: blanchedalmond;
 	    width: 70%;
 	    height: 50px;
 	    display: none;
+	    text-align: center;
+    	line-height: 50px;
 	}
 
 </style>
@@ -29,8 +31,8 @@ function getQueryString(name){
 
 </script>
 <body>
-	<button id='bt1'>成功</button>
-	<button id='bt2'>失败</button>
+	<div id='bt1'>成功</div>
+	<div id='bt2'>失败</div>
 </body>
 <script>
 	var code = getQueryString('code')
