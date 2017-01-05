@@ -36,7 +36,6 @@ function getQueryString(name){
 	var code = getQueryString('code')
 	if(code){
 		document.getElementById('bt1').style.display = 'block'
-		alert(parent.window._jingdong_oauth_get_access_token)
 		parent && parent.window._jingdong_oauth_get_access_token && parent.window._jingdong_oauth_get_access_token(code)
 	} else {
 		document.getElementById('bt2').style.display = 'block'
