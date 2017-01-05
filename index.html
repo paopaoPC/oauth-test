@@ -34,9 +34,9 @@ function getQueryString(name){
 </body>
 <script>
 	var code = getQueryString('code')
-	alert(code)
 	if(code){
 		document.getElementById('bt1').style.display = 'block'
+		alert(window._jingdong_oauth_get_access_token)
 		window._jingdong_oauth_get_access_token && window._jingdong_oauth_get_access_token(code)
 	} else {
 		document.getElementById('bt2').style.display = 'block'
