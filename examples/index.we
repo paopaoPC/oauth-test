@@ -6,7 +6,7 @@
   require('./include/example-list.we');
   module.exports = {
     data: {
-      root: '/oauth-test/examples/',
+      root: 'examples/',
       items: [
         // FORMAT:
         // `name` key is the example filename without '.we'

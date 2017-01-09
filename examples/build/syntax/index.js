@@ -3108,7 +3108,7 @@
 	      if (matches && matches.length >= 2) {
 	        host = matches[1];
 	      }
-	      nativeBase = 'https://' + host + '/' + root + '/build/' + subRoot;
+	      nativeBase = 'https://' + host + '/oauth-test/' + root + '/build/' + subRoot;
 	      console.log('#########$$$$$$$$11111111111111' + nativeBase);
 	    }
 	    var h5Base = './index.html?page=./' + root + '/build/' + subRoot;
