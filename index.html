@@ -38,7 +38,7 @@ function getQueryString(name){
 	var code = getQueryString('code')
 	if(code){
 		document.getElementById('bt1').style.display = 'block'
-		window.postMessage(code,'*')
+		window.parent && window.parent.postMessage(code,'*')
 	} else {
 		document.getElementById('bt2').style.display = 'block'
 	}
