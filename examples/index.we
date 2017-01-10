@@ -18,7 +18,7 @@
         {name: 'animation', title: 'Animation'},
 
         // component
-        {name: 'component/text-demo', title: 'Text'},
+        {name: 'vue/component/text', title: 'Text'},
         {name: 'component/image-demo', title: 'Image'},
         {name: 'component/input-demo', title: 'Input'},
         {name: 'component/scroller-demo', title: 'Scroller'},
