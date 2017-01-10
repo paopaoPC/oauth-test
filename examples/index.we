@@ -6,7 +6,7 @@
   require('./include/example-list.we');
   module.exports = {
     data: {
-      root: 'examples/',
+      root: 'examples/vue',
       items: [
         // FORMAT:
         // `name` key is the example filename without '.we'
