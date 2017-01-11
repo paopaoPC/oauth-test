@@ -50,8 +50,8 @@
 	
 	  module.exports = {
 	    components: {
-	      panel: __webpack_require__(369),
-	      styleItem: __webpack_require__(396)
+	      panel: __webpack_require__(371),
+	      styleItem: __webpack_require__(398)
 	    }
 	  }
 
@@ -74,7 +74,7 @@
 
 /***/ },
 
-/***/ 369:
+/***/ 371:
 /***/ function(module, exports) {
 
 	
@@ -154,7 +154,7 @@
 
 /***/ },
 
-/***/ 396:
+/***/ 398:
 /***/ function(module, exports) {
 
 	

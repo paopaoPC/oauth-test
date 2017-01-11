@@ -48,68 +48,55 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	  var webview = __weex_require_module__('webview');
+	  var modal = __weex_require_module__('modal')
 	  module.exports = {
+	    data: {
+	      playStatus: 'play'
+	    },
 	    components: {
-	      button: __webpack_require__(370)
+	      button: __webpack_require__(372)
 	    },
 	    methods: {
-	      goback: function() {
-	        var el = this.$refs.webview
-	        webview.goBack(el)
+	      pause: function() {
+	        this.playStatus = 'pause'
 	      },
-	      goforward: function() {
-	        var el = this.$refs.webview
-	        webview.goForward(el)
+	      play: function() {
+	        this.playStatus = 'play'
 	      },
-	      refresh: function() {
-	        var el = this.$refs.webview
-	        webview.reload(el)
+	      onpause: function(e) {
+	        this.playStatus = e.playStatus
+	        modal.toast({ 'message': 'video pause' })
 	      },
-	      startload: function(e) {
+	      onstart: function(e) {
+	        this.playStatus = e.playStatus
+	        modal.toast({ 'message': 'video start' })
 	      },
-	      finishload: function(e) {
+	      onfinish: function(e) {
+	        this.playStatus = e.playStatus
+	        modal.toast({ 'message': 'video finish' })
 	      },
-	      failload: function(e) {
+	      onfail: function(e) {
+	        this.playStatus = e.playStatus
+	        modal.toast({ 'message': 'video fail' })
 	      }
 	    }
-	  }
+	  };
 
 	module.exports.style = {
-	  "wrapper": {
+	  "video": {
 	    "width": 750,
-	    "position": "absolute",
-	    "top": 0,
-	    "left": 0,
-	    "right": 0,
-	    "bottom": 0
-	  },
-	  "content": {
-	    "position": "absolute",
-	    "top": 0,
-	    "left": 0,
-	    "right": 0,
-	    "bottom": 0,
-	    "marginTop": 0,
-	    "marginBottom": 70
-	  },
-	  "toolbar": {
-	    "flexDirection": "row",
-	    "position": "fixed",
-	    "bottom": 0,
-	    "left": 0,
-	    "right": 0,
-	    "height": 70
+	    "height": 460,
+	    "marginBottom": 80
 	  }
 	}
-	module.exports.render = function() {with(this){return _h('div',{staticClass:["wrapper"]},[_h('div',{staticClass:["toolbar"],attrs:{"append":"tree"}},[_h('button',{staticStyle:{marginLeft:"30px",width:"210px",marginTop:"5px",marginBottom:"5px"},attrs:{"type":"primary","size":"small","value":"back"},nativeOn:{"click":function($event){goback($event)}}}),_h('button',{staticStyle:{marginLeft:"30px",width:"210px",marginTop:"5px",marginBottom:"5px"},attrs:{"type":"primary","size":"small","value":"forward"},nativeOn:{"click":function($event){goforward($event)}}}),_h('button',{staticStyle:{marginLeft:"30px",width:"210px",marginTop:"5px",marginBottom:"5px"},attrs:{"type":"primary","size":"small","value":"refresh"},nativeOn:{"click":function($event){refresh($event)}}})]),_h('web',{ref:"webview",staticClass:["content"],attrs:{"src":"https://m.taobao.com/?spm=0.0.0.0&v=0#index"},on:{"pagestart":startload,"pagefinish":finishload,"error":failload}})])}}
+	module.exports.render = function() {with(this){return _h('scroller',[_h('video',{staticClass:["video"],attrs:{"onpause":"onpause","onstart":"onstart","onfinish":"onfinish","onfail":"onfail","src":"http://g.tbcdn.cn/ali-wireless-h5/res/0.0.6/toy.mp4","auto-play":"true","playStatus":playStatus}}),_h('div',{staticStyle:{flexDirection:"row",justifyContent:"center"}},[_h('button',{attrs:{"value":"Pause"},on:{"click":pause}}),_h('button',{staticStyle:{marginLeft:"20px"},attrs:{"value":"Play","type":"primary"},on:{"click":play}})])])}}
 	module.exports.el = "body"
 	new Vue(module.exports)
 
 
 /***/ },
 
-/***/ 370:
+/***/ 372:
 /***/ function(module, exports) {
 
 	

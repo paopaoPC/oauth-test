@@ -184,8 +184,8 @@
 	      ]
 	    },
 	    components: {
-	      panel: __webpack_require__(369),
-	      sliderPage: __webpack_require__(377)
+	      panel: __webpack_require__(371),
+	      sliderPage: __webpack_require__(379)
 	    },
 	    methods: {
 	      togglePlay: function() {
@@ -244,7 +244,7 @@
 
 /***/ },
 
-/***/ 369:
+/***/ 371:
 /***/ function(module, exports) {
 
 	
@@ -324,7 +324,7 @@
 
 /***/ },
 
-/***/ 377:
+/***/ 379:
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -333,7 +333,7 @@
 	      items: { default: [] }
 	    },
 	    components: {
-	      sliderItem: __webpack_require__(378)
+	      sliderItem: __webpack_require__(380)
 	    }
 	  }
 
@@ -351,7 +351,7 @@
 
 /***/ },
 
-/***/ 378:
+/***/ 380:
 /***/ function(module, exports) {
 
 	

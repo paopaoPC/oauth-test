@@ -57,7 +57,7 @@
 	      ]
 	    },
 	    components: {
-	      item: __webpack_require__(398)
+	      item: __webpack_require__(400)
 	    }
 	  }
 
@@ -68,7 +68,7 @@
 
 /***/ },
 
-/***/ 398:
+/***/ 400:
 /***/ function(module, exports) {
 
 	

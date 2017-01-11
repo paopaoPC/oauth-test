@@ -53,8 +53,8 @@
 	      img: '//gw.alicdn.com/tps/i2/TB1DpsmMpXXXXabaXXX20ySQVXX-512-512.png_400x400.jpg'
 	    },
 	    components: {
-	      panel: __webpack_require__(369),
-	      tip: __webpack_require__(371)
+	      panel: __webpack_require__(371),
+	      tip: __webpack_require__(373)
 	    }
 	  }
 
@@ -72,7 +72,7 @@
 
 /***/ },
 
-/***/ 369:
+/***/ 371:
 /***/ function(module, exports) {
 
 	
@@ -152,7 +152,7 @@
 
 /***/ },
 
-/***/ 371:
+/***/ 373:
 /***/ function(module, exports) {
 
 	

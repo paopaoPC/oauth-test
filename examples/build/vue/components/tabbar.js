@@ -48,7 +48,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	  var getBaseURL = __webpack_require__(374).getBaseURL
+	  var getBaseURL = __webpack_require__(376).getBaseURL
 	  module.exports = {
 	    data: {
 	      dir: 'examples',
@@ -86,7 +86,7 @@
 	      ],
 	    },
 	    components: {
-	      tabbar: __webpack_require__(379)
+	      tabbar: __webpack_require__(381)
 	    },
 	    created: function() {
 	      var baseURL = getBaseURL(this)
@@ -109,7 +109,7 @@
 
 /***/ },
 
-/***/ 374:
+/***/ 376:
 /***/ function(module, exports) {
 
 	exports.getBaseURL = function (vm) {
@@ -146,7 +146,7 @@
 
 /***/ },
 
-/***/ 379:
+/***/ 381:
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -162,7 +162,7 @@
 	      }
 	    },
 	    components: {
-	      tabitem: __webpack_require__(380)
+	      tabitem: __webpack_require__(382)
 	    },
 	    created: function () {
 	      this.select(this.selectedIndex);
@@ -224,7 +224,7 @@
 
 /***/ },
 
-/***/ 380:
+/***/ 382:
 /***/ function(module, exports) {
 
 	

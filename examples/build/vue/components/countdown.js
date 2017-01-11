@@ -68,8 +68,8 @@
 	      }
 	    },
 	    components: {
-	      panel: __webpack_require__(369),
-	      countdown: __webpack_require__(372)
+	      panel: __webpack_require__(371),
+	      countdown: __webpack_require__(374)
 	    },
 	    methods: {
 	      tick: function (e, k) {
@@ -114,7 +114,7 @@
 
 /***/ },
 
-/***/ 369:
+/***/ 371:
 /***/ function(module, exports) {
 
 	
@@ -194,7 +194,7 @@
 
 /***/ },
 
-/***/ 372:
+/***/ 374:
 /***/ function(module, exports) {
 
 	

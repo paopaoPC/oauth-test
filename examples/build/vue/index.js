@@ -88,7 +88,7 @@
 	      ]
 	    },
 	    components: {
-	      exampleList: __webpack_require__(381)
+	      exampleList: __webpack_require__(383)
 	    }
 	  }
 
@@ -99,7 +99,7 @@
 
 /***/ },
 
-/***/ 374:
+/***/ 376:
 /***/ function(module, exports) {
 
 	exports.getBaseURL = function (vm) {
@@ -136,11 +136,11 @@
 
 /***/ },
 
-/***/ 381:
+/***/ 383:
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	  var getBaseURL = __webpack_require__(374).getBaseURL
+	  var getBaseURL = __webpack_require__(376).getBaseURL
 	  module.exports = {
 	    props: {
 	      dir: {
@@ -153,7 +153,7 @@
 	      }
 	    },
 	    components: {
-	      exampleListItem: __webpack_require__(382)
+	      exampleListItem: __webpack_require__(384)
 	    },
 	    created: function() {
 	      var base = getBaseURL(this)
@@ -172,7 +172,7 @@
 
 /***/ },
 
-/***/ 382:
+/***/ 384:
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -183,7 +183,7 @@
 	      url: { default: '' }
 	    },
 	    components: {
-	      listItem: __webpack_require__(383)
+	      listItem: __webpack_require__(385)
 	    },
 	    methods: {
 	      redirect: function() {
@@ -204,7 +204,7 @@
 
 /***/ },
 
-/***/ 383:
+/***/ 385:
 /***/ function(module, exports) {
 
 	

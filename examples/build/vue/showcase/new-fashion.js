@@ -53,14 +53,14 @@
 
 	  module.exports = {
 	    components: {
-	      headlines: __webpack_require__(384),
-	      category: __webpack_require__(388),
-	      coupon: __webpack_require__(389),
-	      goods: __webpack_require__(390),
-	      resource: __webpack_require__(391),
-	      scene: __webpack_require__(392),
-	      match: __webpack_require__(393),
-	      brand: __webpack_require__(394)
+	      headlines: __webpack_require__(386),
+	      category: __webpack_require__(390),
+	      coupon: __webpack_require__(391),
+	      goods: __webpack_require__(392),
+	      resource: __webpack_require__(393),
+	      scene: __webpack_require__(394),
+	      match: __webpack_require__(395),
+	      brand: __webpack_require__(396)
 	    },
 	    data: {
 	      navBarHeight: 88,
@@ -639,14 +639,14 @@
 
 /***/ },
 
-/***/ 384:
+/***/ 386:
 /***/ function(module, exports, __webpack_require__) {
 
 	
 	  module.exports = {
 	    components: {
-	      link: __webpack_require__(385),
-	      banners: __webpack_require__(386)
+	      link: __webpack_require__(387),
+	      banners: __webpack_require__(388)
 	    },
 	    props: {
 	      ds: {
@@ -720,7 +720,7 @@
 
 /***/ },
 
-/***/ 385:
+/***/ 387:
 /***/ function(module, exports) {
 
 	
@@ -743,13 +743,13 @@
 
 /***/ },
 
-/***/ 386:
+/***/ 388:
 /***/ function(module, exports, __webpack_require__) {
 
 	
 	  module.exports = {
 	    components: {
-	      banner: __webpack_require__(387)
+	      banner: __webpack_require__(389)
 	    },
 	    props: ['ds', 'width', 'height', 'space', 'direction']
 	  };
@@ -760,7 +760,7 @@
 
 /***/ },
 
-/***/ 387:
+/***/ 389:
 /***/ function(module, exports) {
 
 	
@@ -788,7 +788,7 @@
 
 /***/ },
 
-/***/ 388:
+/***/ 390:
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -1180,7 +1180,7 @@
 
 	  module.exports = {
 	    components: {
-	      banner: __webpack_require__(387)
+	      banner: __webpack_require__(389)
 	    },
 	    props: {
 	      ds: {
@@ -1268,7 +1268,7 @@
 
 /***/ },
 
-/***/ 389:
+/***/ 391:
 /***/ function(module, exports) {
 
 	
@@ -1344,13 +1344,13 @@
 
 /***/ },
 
-/***/ 390:
+/***/ 392:
 /***/ function(module, exports, __webpack_require__) {
 
 	
 	  module.exports = {
 	    components: {
-	      banner: __webpack_require__(387)
+	      banner: __webpack_require__(389)
 	    },
 	    props: {
 	      ds: {
@@ -1396,14 +1396,14 @@
 
 /***/ },
 
-/***/ 391:
+/***/ 393:
 /***/ function(module, exports, __webpack_require__) {
 
 	
 	  module.exports = {
 	    components: {
-	      banners: __webpack_require__(386),
-	      banner: __webpack_require__(387)
+	      banners: __webpack_require__(388),
+	      banner: __webpack_require__(389)
 	    },
 	    props: {
 	      ds: {
@@ -1438,7 +1438,7 @@
 
 /***/ },
 
-/***/ 392:
+/***/ 394:
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -1596,7 +1596,7 @@
 
 	  module.exports = {
 	    components: {
-	      banner: __webpack_require__(387)
+	      banner: __webpack_require__(389)
 	    },
 	    props: {
 	      ds: {
@@ -1700,13 +1700,13 @@
 
 /***/ },
 
-/***/ 393:
+/***/ 395:
 /***/ function(module, exports, __webpack_require__) {
 
 	
 	  module.exports = {
 	    components: {
-	      banner: __webpack_require__(387)
+	      banner: __webpack_require__(389)
 	    },
 	    props: {
 	      ds: {
@@ -1741,13 +1741,13 @@
 
 /***/ },
 
-/***/ 394:
+/***/ 396:
 /***/ function(module, exports, __webpack_require__) {
 
 	
 	  module.exports = {
 	    components: {
-	      banners: __webpack_require__(386)
+	      banners: __webpack_require__(388)
 	    },
 	    props: {
 	      ds: {

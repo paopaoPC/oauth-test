@@ -42,43 +42,15 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ({
+/******/ ([
+/* 0 */
+/***/ function(module, exports) {
 
-/***/ 0:
-/***/ function(module, exports, __webpack_require__) {
-
-	
-	  module.exports = {
-	    components: {
-	      btn: __webpack_require__(401)
-	    }
-	  }
-
-	module.exports.render = function() {with(this){return _h('div',[_h('btn',[_m(0)])])}}
-	module.exports.staticRenderFns = [function(){with(this){return _h('text',["Click!"])}}]
+	module.exports.render = function() {with(this){return _m(0)}}
+	module.exports.staticRenderFns = [function(){with(this){return _h('div',[_h('text',{staticStyle:{fontSize:"100px"}},["Hello World."])])}}]
 	module.exports.el = "body"
 	new Vue(module.exports)
 
 
-/***/ },
-
-/***/ 401:
-/***/ function(module, exports) {
-
-	module.exports.style = {
-	  "btn": {
-	    "fontSize": 36,
-	    "textAlign": "center",
-	    "color": "#FFFFFF",
-	    "backgroundColor": "#808080",
-	    "padding": 20,
-	    "borderRadius": 5
-	  }
-	}
-	module.exports.render = function() {with(this){return _h('div',{staticClass:["btn"]},[_t("default")])}}
-	delete module.exports.el
-
-
 /***/ }
-
-/******/ });
+/******/ ]);

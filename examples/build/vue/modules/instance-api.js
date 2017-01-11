@@ -53,7 +53,7 @@
 	      config: ''
 	    },
 	    components: {
-	      panel: __webpack_require__(369)
+	      panel: __webpack_require__(371)
 	    },
 	    created: function() {
 	      var config = this.$getConfig();
@@ -69,7 +69,7 @@
 
 /***/ },
 
-/***/ 369:
+/***/ 371:
 /***/ function(module, exports) {
 
 	

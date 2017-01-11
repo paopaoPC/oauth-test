@@ -49,7 +49,7 @@
 
 	
 	  var navigator = __weex_require_module__('navigator')
-	  var getBaseURL = __webpack_require__(374).getBaseURL
+	  var getBaseURL = __webpack_require__(376).getBaseURL
 	  module.exports = {
 	    data: {
 	      navBarHeight: 88,
@@ -58,9 +58,9 @@
 	      baseURL: '',
 	    },
 	    components: {
-	      panel: __webpack_require__(369),
-	      navpage: __webpack_require__(375),
-	      button: __webpack_require__(370)
+	      panel: __webpack_require__(371),
+	      navpage: __webpack_require__(377),
+	      button: __webpack_require__(372)
 	    },
 	    created: function() {
 	      this.$getConfig(function (config) {
@@ -104,7 +104,7 @@
 
 /***/ },
 
-/***/ 369:
+/***/ 371:
 /***/ function(module, exports) {
 
 	
@@ -184,7 +184,7 @@
 
 /***/ },
 
-/***/ 370:
+/***/ 372:
 /***/ function(module, exports) {
 
 	
@@ -296,7 +296,7 @@
 
 /***/ },
 
-/***/ 374:
+/***/ 376:
 /***/ function(module, exports) {
 
 	exports.getBaseURL = function (vm) {
@@ -333,13 +333,13 @@
 
 /***/ },
 
-/***/ 375:
+/***/ 377:
 /***/ function(module, exports, __webpack_require__) {
 
 	
 	  module.exports = {
 	    components: {
-	      navbar: __webpack_require__(376)
+	      navbar: __webpack_require__(378)
 	    },
 	    props: {
 	      dataRole: { default: 'navbar' },
@@ -380,7 +380,7 @@
 
 /***/ },
 
-/***/ 376:
+/***/ 378:
 /***/ function(module, exports) {
 
 	

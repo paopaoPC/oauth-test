@@ -53,7 +53,7 @@
 	      x: 'xxx'
 	    },
 	    components: {
-	      foo: __webpack_require__(401)
+	      foo: __webpack_require__(403)
 	    }
 	  }
 
@@ -64,7 +64,7 @@
 
 /***/ },
 
-/***/ 401:
+/***/ 403:
 /***/ function(module, exports) {
 
 	module.exports.render = function() {with(this){return _h('div',[_m(0),_t("default")])}}

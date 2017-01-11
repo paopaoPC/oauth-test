@@ -50,39 +50,55 @@
 	
 	  module.exports = {
 	    data: {
-	      txtInput: '',
-	      txtChange: ''
+	      marquee: {
+	        height: 30,
+	        duration: 1500,
+	        interval: 2000,
+	        list: [
+	          {text: 'Introducing Bots on Messenger'},
+	          {text: 'Capturing 3D 360-Stereo VR Video'},
+	          {text: 'The Future of Video on Facebook'},
+	          {text: 'Announcing Vue.js 2.0'},
+	          {text: 'Not Your Average Virtual-DOM'},
+	          {text: 'Templates, JSX, or Hyperscript?'}
+	        ]
+	      }
 	    },
 	    components: {
-	      panel: __webpack_require__(369)
+	      panel: __webpack_require__(371),
+	      marquee: __webpack_require__(375)
 	    },
 	    methods: {
-	      onchange: function(event) {
-	        this.txtChange = event.value;
-	        console.log('onchange', event.value);
-	      },
-	      oninput: function(event) {
-	        this.txtInput = event.value;
-	        console.log('oninput', event.value);
+	      marqueeChange: function (e) {
+	        console.log(e)
 	      }
 	    }
-	  };
-
-	module.exports.style = {
-	  "input": {
-	    "fontSize": 60,
-	    "height": 80,
-	    "width": 400
 	  }
-	}
-	module.exports.render = function() {with(this){return _h('scroller',[_h('panel',{attrs:{"title":"input","type":"primary"}},[_h('input',{staticClass:["input"],attrs:{"type":"text","placeholder":"Text Input","autofocus":"true","value":""},on:{"change":onchange,"input":oninput}}),_h('text',["oninput: "+_s(txtInput)]),_h('text',["onchange: "+_s(txtChange)])])])}}
+
+	module.exports.render = function() {with(this){return _h('scroller',[_h('panel',{attrs:{"title":"Marquee","type":"primary"}},[_h('marquee',{style:{
+	          width: 700,
+	          height: marquee.height * 2,
+	          backgroundColor: 'rgb(223, 240, 216)',
+	          borderRadius: 8,
+	          paddingLeft: 10,
+	          paddingRight: 10
+	        },attrs:{"step":marquee.height * 2,"count":marquee.list.length,"interval":marquee.interval,"duration":marquee.duration},on:{"change":marqueeChange}},[_l((marquee.list),function(item){return _h('div',{style:{
+	            height: marquee.height * marquee.length,
+	            paddingTop: marquee.height * 0.5,
+	            paddingBottom: marquee.height * 0.5,
+	            overflow: 'hidden'
+	          }},[_h('text',{style:{
+	              height: marquee.height,
+	              color: 'rgb(60, 118, 61)',
+	              fontSize: 28
+	            }},[_s(item.text)])])})])])])}}
 	module.exports.el = "body"
 	new Vue(module.exports)
 
 
 /***/ },
 
-/***/ 369:
+/***/ 371:
 /***/ function(module, exports) {
 
 	
@@ -157,6 +173,79 @@
 	        paddingLeft: paddingBody*1.5,
 	        paddingRight: paddingBody*1.5
 	      }},[_t("default")])])}}
+	delete module.exports.el
+
+
+/***/ },
+
+/***/ 375:
+/***/ function(module, exports) {
+
+	
+	  var animation = __weex_require_module__('animation')
+
+	  module.exports = {
+	    props: {
+	      step: { default: 0 },
+	      count: { default: 0 },
+	      index: { default: 1 },
+	      duration: { default: 0 },
+	      interval: { default: 0 },
+	      outofview: { default: false }
+	    },
+	    created: function () {
+	      if (this.interval > 0 && this.step > 0 && this.duration > 0) {
+	        this.run();  
+	      }
+	    },
+	    methods: {
+	      run: function () {
+	        if (this.outofview) {
+	          setTimeout(this.run.bind(this), this.interval);
+	        } else {
+	          setTimeout(function () {
+	            this.animation(this.run.bind(this));
+	          }.bind(this), this.interval);
+	        }
+	      },
+	      animation: function (cb) {
+	        var offset = -this.step * this.index;
+	        animation.transition(this.$refs.anim.ref, {
+	          styles: {
+	            transform: 'translateY(' + offset + 'px) translateZ(0)'
+	          },
+	          timingFunction: 'ease',
+	          duration: this.duration
+	        }, function () {
+	          this.index = (this.index + 1) % (this.count);
+	          this.$emit('change', {
+	            index: this.index,
+	            count: this.count
+	          });
+	          cb && cb();
+	        }.bind(this));
+	      },
+	      appeared: function() {
+	        this.outofview = false;
+	      },
+	      disappeared: function() {
+	        this.outofview = true;
+	      }
+	    }
+	  }
+
+	module.exports.style = {
+	  "wrap": {
+	    "overflow": "hidden",
+	    "position": "relative"
+	  },
+	  "anim": {
+	    "flexDirection": "column",
+	    "position": "absolute",
+	    "transform": "translateY(0) translateZ(0)"
+	  }
+	}
+	module.exports.render = function() {with(this){return _h('div',{staticClass:["wrap"],on:{"appear":appeared,"disappear":disappeared}},[_h('div',{ref:"anim",staticClass:["anim"]},[_t("default")])])}}
 	delete module.exports.el
 
 

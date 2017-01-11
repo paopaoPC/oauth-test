@@ -44,8 +44,8 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __weex_template__ = __webpack_require__(316)
-	var __weex_script__ = __webpack_require__(317)
+	var __weex_template__ = __webpack_require__(318)
+	var __weex_script__ = __webpack_require__(319)
 
 	__weex_define__('@weex-component/7c0aa0b76c7fe063e27065c721bee1a0', [], function(__weex_require__, __weex_exports__, __weex_module__) {
 
@@ -3108,8 +3108,7 @@
 	      if (matches && matches.length >= 2) {
 	        host = matches[1];
 	      }
-	      nativeBase = 'https://' + host + '/oauth-test/' + root + '/build/' + subRoot;
-	      console.log('#########$$$$$$$$11111111111111' + nativeBase);
+	      nativeBase = 'http://' + host + '/' + root + '/build/' + subRoot;
 	    }
 	    var h5Base = './index.html?page=./' + root + '/build/' + subRoot;
 
@@ -3243,7 +3242,9 @@
 /* 313 */,
 /* 314 */,
 /* 315 */,
-/* 316 */
+/* 316 */,
+/* 317 */,
+/* 318 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -3255,7 +3256,7 @@
 	}
 
 /***/ },
-/* 317 */
+/* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, __weex_require__){'use strict';

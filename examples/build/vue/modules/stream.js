@@ -60,7 +60,7 @@
 	      patchResult: 'loading...',
 	    },
 	    components: {
-	      panel: __webpack_require__(369)
+	      panel: __webpack_require__(371)
 	    },
 	    created: function() {
 	      var me = this;
@@ -194,7 +194,7 @@
 
 /***/ },
 
-/***/ 369:
+/***/ 371:
 /***/ function(module, exports) {
 
 	

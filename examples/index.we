@@ -13,12 +13,14 @@
         // Support sub directory, e.g. 'new-fashion/index'
 
         // common
+        {name: 'my-list', title: '哈哈1'},
+        {name: 'vue-hello', title: '呵呵'},
         {name: 'hello', title: 'Hello World'},
         {name: 'style/index', title: 'Common Style'},
         {name: 'animation', title: 'Animation'},
 
         // component
-        {name: 'vue/component/text', title: 'Text'},
+        {name: 'vue/components/text', title: 'Text'},
         {name: 'component/image-demo', title: 'Image'},
         {name: 'component/input-demo', title: 'Input'},
         {name: 'component/scroller-demo', title: 'Scroller'},

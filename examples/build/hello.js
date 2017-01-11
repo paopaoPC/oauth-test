@@ -61,7 +61,7 @@
 /***/ function(module, exports) {
 
 	module.exports = {
-	  "type": "div",
+	  "type": "scroller",
 	  "children": [
 	    {
 	      "type": "text",
@@ -69,7 +69,124 @@
 	        "fontSize": 100
 	      },
 	      "attr": {
-	        "value": "Hello World--not vue"
+	        "value": "Hello World--not vuesss"
+	      }
+	    },
+	    {
+	      "type": "text",
+	      "style": {
+	        "fontSize": 200
+	      },
+	      "attr": {
+	        "value": "sdfdfsdfds"
+	      }
+	    },
+	    {
+	      "type": "text",
+	      "style": {
+	        "fontSize": 200
+	      },
+	      "attr": {
+	        "value": "sdfdfsdfds"
+	      }
+	    },
+	    {
+	      "type": "text",
+	      "style": {
+	        "fontSize": 200
+	      },
+	      "attr": {
+	        "value": "sdfdfsdfds"
+	      }
+	    },
+	    {
+	      "type": "text",
+	      "style": {
+	        "fontSize": 200
+	      },
+	      "attr": {
+	        "value": "sdfdfsdfds"
+	      }
+	    },
+	    {
+	      "type": "text",
+	      "style": {
+	        "fontSize": 200
+	      },
+	      "attr": {
+	        "value": "sdfdfsdfds"
+	      }
+	    },
+	    {
+	      "type": "text",
+	      "style": {
+	        "fontSize": 200
+	      },
+	      "attr": {
+	        "value": "sdfdfsdfds"
+	      }
+	    },
+	    {
+	      "type": "text",
+	      "style": {
+	        "fontSize": 200
+	      },
+	      "attr": {
+	        "value": "sdfdfsdfds"
+	      }
+	    },
+	    {
+	      "type": "text",
+	      "style": {
+	        "fontSize": 200
+	      },
+	      "attr": {
+	        "value": "sdfdfsdfds"
+	      }
+	    },
+	    {
+	      "type": "text",
+	      "style": {
+	        "fontSize": 200
+	      },
+	      "attr": {
+	        "value": "sdfdfsdfds"
+	      }
+	    },
+	    {
+	      "type": "text",
+	      "style": {
+	        "fontSize": 200
+	      },
+	      "attr": {
+	        "value": "sdfdfsdfds"
+	      }
+	    },
+	    {
+	      "type": "text",
+	      "style": {
+	        "fontSize": 200
+	      },
+	      "attr": {
+	        "value": "sdfdfsdfds"
+	      }
+	    },
+	    {
+	      "type": "text",
+	      "style": {
+	        "fontSize": 200
+	      },
+	      "attr": {
+	        "value": "sdfdfsdfds"
+	      }
+	    },
+	    {
+	      "type": "text",
+	      "style": {
+	        "fontSize": 200
+	      },
+	      "attr": {
+	        "value": "sdfdfsdfds"
 	      }
 	    }
 	  ]

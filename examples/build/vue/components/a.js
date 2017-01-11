@@ -50,55 +50,22 @@
 	
 	  module.exports = {
 	    data: {
-	      marquee: {
-	        height: 30,
-	        duration: 1500,
-	        interval: 2000,
-	        list: [
-	          {text: 'Introducing Bots on Messenger'},
-	          {text: 'Capturing 3D 360-Stereo VR Video'},
-	          {text: 'The Future of Video on Facebook'},
-	          {text: 'Announcing Vue.js 2.0'},
-	          {text: 'Not Your Average Virtual-DOM'},
-	          {text: 'Templates, JSX, or Hyperscript?'}
-	        ]
-	      }
+	      img: '//gw.alicdn.com/tps/i2/TB1DpsmMpXXXXabaXXX20ySQVXX-512-512.png_400x400.jpg'
 	    },
 	    components: {
-	      panel: __webpack_require__(369),
-	      marquee: __webpack_require__(373)
-	    },
-	    methods: {
-	      marqueeChange: function (e) {
-	        console.log(e)
-	      }
+	      panel: __webpack_require__(371),
+	      tip: __webpack_require__(373)
 	    }
 	  }
 
-	module.exports.render = function() {with(this){return _h('scroller',[_h('panel',{attrs:{"title":"Marquee","type":"primary"}},[_h('marquee',{style:{
-	          width: 700,
-	          height: marquee.height * 2,
-	          backgroundColor: 'rgb(223, 240, 216)',
-	          borderRadius: 8,
-	          paddingLeft: 10,
-	          paddingRight: 10
-	        },attrs:{"step":marquee.height * 2,"count":marquee.list.length,"interval":marquee.interval,"duration":marquee.duration},on:{"change":marqueeChange}},[_l((marquee.list),function(item){return _h('div',{style:{
-	            height: marquee.height * marquee.length,
-	            paddingTop: marquee.height * 0.5,
-	            paddingBottom: marquee.height * 0.5,
-	            overflow: 'hidden'
-	          }},[_h('text',{style:{
-	              height: marquee.height,
-	              color: 'rgb(60, 118, 61)',
-	              fontSize: 28
-	            }},[_s(item.text)])])})])])])}}
+	module.exports.render = function() {with(this){return _h('scroller',[_h('panel',{attrs:{"title":"Hyperlink","type":"primary"}},[_h('a',{attrs:{"href":"http://g.tbcdn.cn/ali-wireless-h5/res/0.0.16/hello.js"}},[_h('tip',{staticStyle:{marginBottom:"20px"},attrs:{"type":"info","value":"Click me to see how 'A' element opens a new world."}})])])])}}
 	module.exports.el = "body"
 	new Vue(module.exports)
 
 
 /***/ },
 
-/***/ 369:
+/***/ 371:
 /***/ function(module, exports) {
 
 	
@@ -182,70 +149,54 @@
 /***/ function(module, exports) {
 
 	
-	  var animation = __weex_require_module__('animation')
-
 	  module.exports = {
 	    props: {
-	      step: { default: 0 },
-	      count: { default: 0 },
-	      index: { default: 1 },
-	      duration: { default: 0 },
-	      interval: { default: 0 },
-	      outofview: { default: false }
-	    },
-	    created: function () {
-	      if (this.interval > 0 && this.step > 0 && this.duration > 0) {
-	        this.run();  
-	      }
-	    },
-	    methods: {
-	      run: function () {
-	        if (this.outofview) {
-	          setTimeout(this.run.bind(this), this.interval);
-	        } else {
-	          setTimeout(function () {
-	            this.animation(this.run.bind(this));
-	          }.bind(this), this.interval);
-	        }
-	      },
-	      animation: function (cb) {
-	        var offset = -this.step * this.index;
-	        animation.transition(this.$refs.anim.ref, {
-	          styles: {
-	            transform: 'translateY(' + offset + 'px) translateZ(0)'
-	          },
-	          timingFunction: 'ease',
-	          duration: this.duration
-	        }, function () {
-	          this.index = (this.index + 1) % (this.count);
-	          this.$emit('change', {
-	            index: this.index,
-	            count: this.count
-	          });
-	          cb && cb();
-	        }.bind(this));
-	      },
-	      appeared: function() {
-	        this.outofview = false;
-	      },
-	      disappeared: function() {
-	        this.outofview = true;
-	      }
+	      type: { default: 'success' },
+	      value: { default: '' }
 	    }
 	  }
 
 	module.exports.style = {
-	  "wrap": {
-	    "overflow": "hidden",
-	    "position": "relative"
+	  "tip": {
+	    "paddingLeft": 36,
+	    "paddingRight": 36,
+	    "paddingTop": 36,
+	    "paddingBottom": 36,
+	    "borderRadius": 10
 	  },
-	  "anim": {
-	    "flexDirection": "column",
-	    "position": "absolute",
-	    "transform": "translateY(0) translateZ(0)"
+	  "tip-txt": {
+	    "fontSize": 28
+	  },
+	  "tip-success": {
+	    "backgroundColor": "#dff0d8",
+	    "borderColor": "#d6e9c6"
+	  },
+	  "tip-txt-success": {
+	    "color": "#3c763d"
+	  },
+	  "tip-info": {
+	    "backgroundColor": "#d9edf7",
+	    "borderColor": "#bce8f1"
+	  },
+	  "tip-txt-info": {
+	    "color": "#31708f"
+	  },
+	  "tip-warning": {
+	    "backgroundColor": "#fcf8e3",
+	    "borderColor": "#faebcc"
+	  },
+	  "tip-txt-warning": {
+	    "color": "#8a6d3b"
+	  },
+	  "tip-danger": {
+	    "backgroundColor": "#f2dede",
+	    "borderColor": "#ebccd1"
+	  },
+	  "tip-txt-danger": {
+	    "color": "#a94442"
 	  }
 	}
-	module.exports.render = function() {with(this){return _h('div',{staticClass:["wrap"],on:{"appear":appeared,"disappear":disappeared}},[_h('div',{ref:"anim",staticClass:["anim"]},[_t("default")])])}}
+	module.exports.render = function() {with(this){return _h('div',{class:['tip', 'tip-' + type]},[_h('text',{class:['tip-txt', 'tip-txt-' + type]},[_s(value)])])}}
 	delete module.exports.el
 
 

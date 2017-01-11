@@ -57,9 +57,9 @@
 	      tips : '',
 	    },
 	    components: {
-	      panel: __webpack_require__(369),
-	      tip: __webpack_require__(371),
-	      button: __webpack_require__(370)
+	      panel: __webpack_require__(371),
+	      tip: __webpack_require__(373),
+	      button: __webpack_require__(372)
 	    },
 	    ready : function() {
 	      this.tips = "1. Just click COPY button. It will auto generate a string with random text, and copy to system clipboard. \n 2. do copy in another app, then come back and click PASTE button."
@@ -92,7 +92,7 @@
 
 /***/ },
 
-/***/ 369:
+/***/ 371:
 /***/ function(module, exports) {
 
 	
@@ -172,7 +172,7 @@
 
 /***/ },
 
-/***/ 370:
+/***/ 372:
 /***/ function(module, exports) {
 
 	
@@ -284,7 +284,7 @@
 
 /***/ },
 
-/***/ 371:
+/***/ 373:
 /***/ function(module, exports) {
 
 	

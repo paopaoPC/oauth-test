@@ -42,8 +42,7 @@
         if (matches && matches.length >= 2) {
           host = matches[1];
         }
-        nativeBase = 'https://' + host + '/oauth-test/' + root + '/build/' + subRoot;
-        console.log('#########$$$$$$$$11111111111111'+nativeBase)
+        nativeBase = 'http://' + host  + '/' + root + '/build/' + subRoot;
       }
       var h5Base = './index.html?page=./' + root + '/build/' + subRoot;
       // in Native

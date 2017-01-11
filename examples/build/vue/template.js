@@ -48,7 +48,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	  var getBaseURL = __webpack_require__(374).getBaseURL
+	  var getBaseURL = __webpack_require__(376).getBaseURL
 	  var baseURL = getBaseURL(this)
 	  var modal = __weex_require_module__('modal')
 	  module.exports = {
@@ -56,10 +56,10 @@
 	      img: '//gw.alicdn.com/tps/i2/TB1DpsmMpXXXXabaXXX20ySQVXX-512-512.png_400x400.jpg'
 	    },
 	    components: {
-	      panel: __webpack_require__(369),
-	      hn: __webpack_require__(400),
-	      tip: __webpack_require__(371),
-	      button: __webpack_require__(370)
+	      panel: __webpack_require__(371),
+	      hn: __webpack_require__(402),
+	      tip: __webpack_require__(373),
+	      button: __webpack_require__(372)
 	    },
 	    methods: {
 	      toast: function() {
@@ -76,7 +76,7 @@
 
 /***/ },
 
-/***/ 369:
+/***/ 371:
 /***/ function(module, exports) {
 
 	
@@ -156,7 +156,7 @@
 
 /***/ },
 
-/***/ 370:
+/***/ 372:
 /***/ function(module, exports) {
 
 	
@@ -268,7 +268,7 @@
 
 /***/ },
 
-/***/ 371:
+/***/ 373:
 /***/ function(module, exports) {
 
 	
@@ -325,7 +325,7 @@
 
 /***/ },
 
-/***/ 374:
+/***/ 376:
 /***/ function(module, exports) {
 
 	exports.getBaseURL = function (vm) {
@@ -362,7 +362,7 @@
 
 /***/ },
 
-/***/ 400:
+/***/ 402:
 /***/ function(module, exports) {
 
 	

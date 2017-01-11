@@ -50,22 +50,39 @@
 	
 	  module.exports = {
 	    data: {
-	      img: '//gw.alicdn.com/tps/i2/TB1DpsmMpXXXXabaXXX20ySQVXX-512-512.png_400x400.jpg'
+	      txtInput: '',
+	      txtChange: ''
 	    },
 	    components: {
-	      panel: __webpack_require__(369),
-	      tip: __webpack_require__(371)
+	      panel: __webpack_require__(371)
+	    },
+	    methods: {
+	      onchange: function(event) {
+	        this.txtChange = event.value;
+	        console.log('onchange', event.value);
+	      },
+	      oninput: function(event) {
+	        this.txtInput = event.value;
+	        console.log('oninput', event.value);
+	      }
 	    }
-	  }
+	  };
 
-	module.exports.render = function() {with(this){return _h('scroller',[_h('panel',{attrs:{"title":"Hyperlink","type":"primary"}},[_h('a',{attrs:{"href":"http://g.tbcdn.cn/ali-wireless-h5/res/0.0.16/hello.js"}},[_h('tip',{staticStyle:{marginBottom:"20px"},attrs:{"type":"info","value":"Click me to see how 'A' element opens a new world."}})])])])}}
+	module.exports.style = {
+	  "input": {
+	    "fontSize": 60,
+	    "height": 80,
+	    "width": 400
+	  }
+	}
+	module.exports.render = function() {with(this){return _h('scroller',[_h('panel',{attrs:{"title":"input","type":"primary"}},[_h('input',{staticClass:["input"],attrs:{"type":"text","placeholder":"Text Input","autofocus":"true","value":""},on:{"change":onchange,"input":oninput}}),_h('text',["oninput: "+_s(txtInput)]),_h('text',["onchange: "+_s(txtChange)])])])}}
 	module.exports.el = "body"
 	new Vue(module.exports)
 
 
 /***/ },
 
-/***/ 369:
+/***/ 371:
 /***/ function(module, exports) {
 
 	
@@ -140,63 +157,6 @@
 	        paddingLeft: paddingBody*1.5,
 	        paddingRight: paddingBody*1.5
 	      }},[_t("default")])])}}
-	delete module.exports.el
-
-
-/***/ },
-
-/***/ 371:
-/***/ function(module, exports) {
-
-	
-	  module.exports = {
-	    props: {
-	      type: { default: 'success' },
-	      value: { default: '' }
-	    }
-	  }
-
-	module.exports.style = {
-	  "tip": {
-	    "paddingLeft": 36,
-	    "paddingRight": 36,
-	    "paddingTop": 36,
-	    "paddingBottom": 36,
-	    "borderRadius": 10
-	  },
-	  "tip-txt": {
-	    "fontSize": 28
-	  },
-	  "tip-success": {
-	    "backgroundColor": "#dff0d8",
-	    "borderColor": "#d6e9c6"
-	  },
-	  "tip-txt-success": {
-	    "color": "#3c763d"
-	  },
-	  "tip-info": {
-	    "backgroundColor": "#d9edf7",
-	    "borderColor": "#bce8f1"
-	  },
-	  "tip-txt-info": {
-	    "color": "#31708f"
-	  },
-	  "tip-warning": {
-	    "backgroundColor": "#fcf8e3",
-	    "borderColor": "#faebcc"
-	  },
-	  "tip-txt-warning": {
-	    "color": "#8a6d3b"
-	  },
-	  "tip-danger": {
-	    "backgroundColor": "#f2dede",
-	    "borderColor": "#ebccd1"
-	  },
-	  "tip-txt-danger": {
-	    "color": "#a94442"
-	  }
-	}
-	module.exports.render = function() {with(this){return _h('div',{class:['tip', 'tip-' + type]},[_h('text',{class:['tip-txt', 'tip-txt-' + type]},[_s(value)])])}}
 	delete module.exports.el
 
 

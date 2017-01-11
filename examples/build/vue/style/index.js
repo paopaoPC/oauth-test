@@ -50,10 +50,10 @@
 	
 	  module.exports = {
 	    components: {
-	      panel: __webpack_require__(369),
-	      styleBox: __webpack_require__(395),
-	      styleFlex: __webpack_require__(397),
-	      styleItem: __webpack_require__(396)
+	      panel: __webpack_require__(371),
+	      styleBox: __webpack_require__(397),
+	      styleFlex: __webpack_require__(399),
+	      styleItem: __webpack_require__(398)
 	    }
 	  }
 
@@ -70,7 +70,7 @@
 
 /***/ },
 
-/***/ 369:
+/***/ 371:
 /***/ function(module, exports) {
 
 	
@@ -150,7 +150,7 @@
 
 /***/ },
 
-/***/ 371:
+/***/ 373:
 /***/ function(module, exports) {
 
 	
@@ -207,15 +207,15 @@
 
 /***/ },
 
-/***/ 395:
+/***/ 397:
 /***/ function(module, exports, __webpack_require__) {
 
 	
 	  module.exports = {
 	    components: {
-	      panel: __webpack_require__(369),
-	      tip: __webpack_require__(371),
-	      styleItem: __webpack_require__(396)
+	      panel: __webpack_require__(371),
+	      tip: __webpack_require__(373),
+	      styleItem: __webpack_require__(398)
 	    }
 	  }
 
@@ -244,7 +244,7 @@
 
 /***/ },
 
-/***/ 396:
+/***/ 398:
 /***/ function(module, exports) {
 
 	
@@ -280,14 +280,14 @@
 
 /***/ },
 
-/***/ 397:
+/***/ 399:
 /***/ function(module, exports, __webpack_require__) {
 
 	
 	  module.exports = {
 	    components: {
-	      panel: __webpack_require__(369),
-	      styleItem: __webpack_require__(396)
+	      panel: __webpack_require__(371),
+	      styleItem: __webpack_require__(398)
 	    }
 	  }
 

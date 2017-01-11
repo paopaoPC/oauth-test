@@ -1,5 +1,18 @@
 <template>
-  <div>
-    <text style="font-size:100px;">Hello World--not vue</text>
-  </div>
+  <scroller>
+    <text style="font-size:100px;">Hello World--not vuesss</text>
+	<text style="font-size:200px;">sdfdfsdfds</text>
+	<text style="font-size:200px;">sdfdfsdfds</text>
+	<text style="font-size:200px;">sdfdfsdfds</text>
+	<text style="font-size:200px;">sdfdfsdfds</text>
+	<text style="font-size:200px;">sdfdfsdfds</text>
+	<text style="font-size:200px;">sdfdfsdfds</text>
+	<text style="font-size:200px;">sdfdfsdfds</text>
+	<text style="font-size:200px;">sdfdfsdfds</text>
+	<text style="font-size:200px;">sdfdfsdfds</text>
+	<text style="font-size:200px;">sdfdfsdfds</text>
+	<text style="font-size:200px;">sdfdfsdfds</text>
+	<text style="font-size:200px;">sdfdfsdfds</text>
+	<text style="font-size:200px;">sdfdfsdfds</text>
+  </scroller>
 </template>

@@ -61,8 +61,8 @@
 	      isStop: true
 	    },
 	    components: {
-	      panel: __webpack_require__(369),
-	      button: __webpack_require__(370)
+	      panel: __webpack_require__(371),
+	      button: __webpack_require__(372)
 	    },
 	    methods: {
 	      anim: function(styles, timingFunction, duration, callback) {
@@ -176,7 +176,7 @@
 
 /***/ },
 
-/***/ 369:
+/***/ 371:
 /***/ function(module, exports) {
 
 	
@@ -256,7 +256,7 @@
 
 /***/ },
 
-/***/ 370:
+/***/ 372:
 /***/ function(module, exports) {
 
 	
